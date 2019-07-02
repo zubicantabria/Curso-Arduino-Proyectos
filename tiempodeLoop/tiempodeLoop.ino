@@ -2,6 +2,8 @@ int estado_anterior;
 
 void setup() {
   Serial.begin(9600);
+  Serial.print("Reseteado.. ");
+  delay(2000);
   pinMode(2, INPUT_PULLUP); //Boton
   pinMode(10, OUTPUT);  //Led
   estado_anterior = digitalRead(2); //Inicializo con el estado del boton al iniciar programa

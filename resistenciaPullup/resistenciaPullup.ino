@@ -1,4 +1,4 @@
-#define MUESTRA_TIEMPO 0
+#define MUESTRA_TIEMPO 1
 
 #define PIN_LED 13
 #define PIN_PULSADOR 2
@@ -6,7 +6,7 @@
 unsigned long tiempo_loop;
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(9600);//baudios puerto serie
   pinMode(PIN_PULSADOR, INPUT_PULLUP);
   pinMode(PIN_LED, OUTPUT);
   tiempo_loop = millis();
